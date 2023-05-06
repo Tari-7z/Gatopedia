@@ -40,7 +40,9 @@ max: 1400px
 
 
 
-
+.principal {
+	height: 100vh;
+}
 /* Navegacion */
 .nav {
 	width: 100%;
@@ -114,8 +116,7 @@ max: 1400px
 	justify-content: center;
 	align-items: center;
 	position: relative;
-
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 }
 
 .banner__capa {
@@ -137,7 +138,6 @@ max: 1400px
 .banner__info .banner__creador {
 	color: var(--yellow);
 	font-size: 1.1rem;
-	margin-bottom: 0.325rem;
 }
 
 .banner__info h1 {
@@ -176,11 +176,14 @@ max: 1400px
 
 
 
+
+
 .toc-list {
 	width: 90%;
 	max-width: 380px;
 	margin: 0 auto;
 	margin-bottom: 120px;
+	border-radius: 10px;
 
 	border: #fff solid 2px;
 	
@@ -201,12 +204,22 @@ max: 1400px
 }
 
 .line {
-	border-bottom: 1px solid var(--white);
+
+	border-bottom: 2px solid var(--white);
+	padding: 4px 0;
+	display: flex;
+	align-items: center;
+	font-weight: 700;
+	font-size: 18px;
 }
 
-.line a {
+
+.line i {
 	margin-left: 1ch;
+	margin-right: 5px;
 }
+
+
 
 
 .not-select {
@@ -215,6 +228,23 @@ max: 1400px
 	-ms-user-select: none;
 	user-select: none; 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes banner {
 	0%, 50% { 
